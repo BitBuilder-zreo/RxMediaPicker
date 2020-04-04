@@ -9,15 +9,17 @@
 /* Begin PBXBuildFile section */
 		B388AAE01C6561B700726BCA /* RxMediaPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = B388AADF1C6561B700726BCA /* RxMediaPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B388AAE81C6561CB00726BCA /* RxMediaPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B388AAE71C6561CB00726BCA /* RxMediaPicker.swift */; };
-		B388AAEA1C65640700726BCA /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B388AAE91C65640700726BCA /* RxSwift.framework */; };
+		B3C022EE5E515499EF049C16 /* Pods_RxMediaPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC082021F8CFE558D4FC6C7A /* Pods_RxMediaPicker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		229252E98F47CE01CB9C811F /* Pods-RxMediaPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMediaPicker.debug.xcconfig"; path = "Target Support Files/Pods-RxMediaPicker/Pods-RxMediaPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		5110BE1B5840890BE2862C15 /* Pods-RxMediaPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMediaPicker.release.xcconfig"; path = "Target Support Files/Pods-RxMediaPicker/Pods-RxMediaPicker.release.xcconfig"; sourceTree = "<group>"; };
+		AC082021F8CFE558D4FC6C7A /* Pods_RxMediaPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMediaPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B388AADC1C6561B700726BCA /* RxMediaPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxMediaPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B388AADF1C6561B700726BCA /* RxMediaPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxMediaPicker.h; sourceTree = "<group>"; };
 		B388AAE11C6561B700726BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B388AAE71C6561CB00726BCA /* RxMediaPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxMediaPicker.swift; sourceTree = "<group>"; };
-		B388AAE91C65640700726BCA /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,19 +27,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B388AAEA1C65640700726BCA /* RxSwift.framework in Frameworks */,
+				B3C022EE5E515499EF049C16 /* Pods_RxMediaPicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		087C23FBAD350C1376009882 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				229252E98F47CE01CB9C811F /* Pods-RxMediaPicker.debug.xcconfig */,
+				5110BE1B5840890BE2862C15 /* Pods-RxMediaPicker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B388AAD21C6561B700726BCA = {
 			isa = PBXGroup;
 			children = (
-				B388AAE91C65640700726BCA /* RxSwift.framework */,
 				B388AADE1C6561B700726BCA /* RxMediaPicker */,
 				B388AADD1C6561B700726BCA /* Products */,
+				087C23FBAD350C1376009882 /* Pods */,
+				F31EA14FCDCD6D386A4539A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +71,14 @@
 			path = RxMediaPicker;
 			sourceTree = "<group>";
 		};
+		F31EA14FCDCD6D386A4539A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC082021F8CFE558D4FC6C7A /* Pods_RxMediaPicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -77,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B388AAE41C6561B700726BCA /* Build configuration list for PBXNativeTarget "RxMediaPicker" */;
 			buildPhases = (
+				CEF69930D5B3A810775A159E /* [CP] Check Pods Manifest.lock */,
 				B388AAD71C6561B700726BCA /* Sources */,
 				B388AAD81C6561B700726BCA /* Frameworks */,
 				B388AAD91C6561B700726BCA /* Headers */,
@@ -111,6 +132,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = B388AAD21C6561B700726BCA;
@@ -132,6 +154,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CEF69930D5B3A810775A159E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxMediaPicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B388AAD71C6561B700726BCA /* Sources */ = {
@@ -243,6 +290,7 @@
 		};
 		B388AAE51C6561B700726BCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 229252E98F47CE01CB9C811F /* Pods-RxMediaPicker.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -270,6 +318,7 @@
 		};
 		B388AAE61C6561B700726BCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5110BE1B5840890BE2862C15 /* Pods-RxMediaPicker.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
